@@ -27,7 +27,9 @@
                 var copyResult = "";
                 try
                 {
-                    if (fileName.StartsWith("Service References\\") || fileName.StartsWith("Web References\\"))
+                    if (fileName.StartsWith("Service References\\") 
+                        || fileName.StartsWith("Web References\\") 
+                        || fileName.Equals("Properties\\AssemblyInfo.cs"))
                     {
                         copyResult = "跳过";
                     }

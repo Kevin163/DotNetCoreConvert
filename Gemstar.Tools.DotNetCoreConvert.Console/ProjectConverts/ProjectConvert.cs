@@ -77,7 +77,7 @@ public class ProjectConvert:IConvert
     }
     private async Task ChangeFileContentsAsync()
     {
-        var systemDataSqlClientToMicrosoftDataSqlClientConvert = new SystemDataSqlClientToMicrosoftDataSqlClientConvert(_targetProjectPath,new List<string> { "ADOHelper.cs" });
+        var systemDataSqlClientToMicrosoftDataSqlClientConvert = new SystemDataSqlClientToMicrosoftDataSqlClientConvert(_targetProjectPath,new List<string> { "ADOHelper.cs", "CheckSpaIsPay.cs", "DaJing.cs", "DGuan.cs", "DGuanSql.cs", "GDong.cs", "Genomics.cs", "HDJY.cs", "IstYunos.cs", "JOBO.cs", "NewCapec.cs", "Oealy.cs", "Quickest.cs", "NewCapec.cs", "Test.cs", "XingHuo.cs", "YiEn.cs", "YunAn.cs" });
         await systemDataSqlClientToMicrosoftDataSqlClientConvert.ConvertAsync();
     }
 }
